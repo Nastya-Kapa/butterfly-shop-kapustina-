@@ -1,0 +1,22 @@
+.promo {
+    padding: 200px 0;
+    text-align: center;
+    background-image: url(../images/Rectangle\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promo-inner {
+    @include inner;
+}
+
+.promo-text {
+    margin-bottom: 100px;
+    color: white;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 98px;
+}
+
