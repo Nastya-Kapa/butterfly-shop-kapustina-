@@ -1,10 +1,14 @@
 .header {
-    padding: 16px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
     background-color: $color-dark;
     color: white;
 }
 
-.headre-inner {
+.header-inner {
     @include inner;
 }
 .header-wrap {
@@ -13,23 +17,34 @@
 }
 
 .header-logo {
-    margin: auto;
+    margin-right: auto;
     font-family: $font;
-    font-style: normal;
     font-weight: 600;
     font-size: 42px;
+    line-height: 57px;
     color: white;
     text-decoration: none;
 }
 
-nav a {
-    margin: auto;
+    
+ul {
+    display: flex;
+    list-style: none;
+}
+ li {
+     margin-left: 10px;
+ }
+
+.nav a {
+    display: inline-block;
+    padding: 33px 25px;
     font-family: $font;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     color: white;
     text-decoration: none;
-    
+    &:hover {
+       background-color: $color-accent;
+    }
 }
