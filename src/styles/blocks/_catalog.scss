@@ -1,12 +1,56 @@
 .catalog {
     padding: 130px 0;
+    text-align: center;
     background-color: rgba($color-dark, .1);
 }
 .catalog-inner {
     @include inner;
+
+}
+.catalog-title {
+    padding-bottom: 100px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+
+
 }
 
 .catalog-wrap {
     display: flex;
-    
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 120px;
+
 }
+
+.catalog-list {
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+  flex-basis: 25%;
+}
+
+.catalog-img {
+  width: 100%;
+
+}
+
+.catalog-text {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  font-family: $font;
+  color: white;
+  background-color: rgba($color-dark, .4);
+}
+
+
